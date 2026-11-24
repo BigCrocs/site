@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(#582b3e, #ffffff00);
+    background-color: #914d69;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, "Helvetica Neue", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 10px 30px rgba(48, 6, 21, 0.5);
+    width: 100%;
+    overflow: hidden;
+}
+.upper-box {
+    background-color: #bb6488;
+    color: white;
+    text-align: right;
+    padding: 25px 30px;
+}
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-top: 5px dotted #ffffff;
+    border-bottom: 5px dotted #ffffff;
+    padding: 10px 0;
+    display: inline-block;
+}
+.content {
+    display: flex;
+}
+.left-box {
+    width: 250px;
+    flex-shrink: 0;
+    background: linear-gradient(#dfc981, #c47199);
+    color: white;
+    padding: 30px 20px;
+}
+.avatar-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.avatar {
+    width: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px dotted #ffffff;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.avatar:hover {
+    animation: spin 10s linear infinite;
+}
+.contact-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 5px dotted #ffffff;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+.contacts .contact-title {
+  color: #ffffff;
+}
+.contact-item {
+  margin-bottom: 15px;
+}
+.contact-label {
+  display: block;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  color: #ffffff;
+}
+.contact-item p, 
+.contact-item a {
+  font-size: 13px;
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 1.4;
+}
+.contact-item a:hover {
+  text-decoration: underline;
+}
+.right-box {
+  flex: 1;
+  padding: 30px;
+  background-color: #ffffff;
+}
+.right-box .section-title {
+  color: #bb6488;
+  border-bottom: 5px dotted #bb6488;
+  margin-top: 10px;
+}
+.right-box section:first-child .section-title {
+  margin-top: 0;
+}
+.right-box p {
+  margin-top: 10px;  
+  font-size: 14px;
+  line-height: 1.6;
+  color: #bb6488;
+  margin-bottom: 25px;
+}
+.skills-list {
+  margin-top: 16px;
+  list-style-type: square;
+  padding-left: 20px;
+}
+.skills-list li {
+  font-size: 14px;
+  line-height: 1;
+  color: #bb6488;
+  margin-bottom: 8px;
+}
